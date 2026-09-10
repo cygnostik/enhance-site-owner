@@ -1,0 +1,6 @@
+{
+  "base_url": "https://control-panel.example.invalid/api",
+  "scope": "organisation",
+  "org_id": "REPLACE_WITH_CUSTOMER_ORG_UUID",
+  "token_env": "ENHANCE_CUSTOMER_API_TOKEN"
+}

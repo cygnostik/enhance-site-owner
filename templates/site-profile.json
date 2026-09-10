@@ -1,0 +1,8 @@
+{
+  "base_url": "https://control-panel.example.invalid/api",
+  "scope": "site",
+  "org_id": "REPLACE_WITH_CUSTOMER_ORG_UUID",
+  "website_id": "REPLACE_WITH_WEBSITE_UUID",
+  "domain_ids": [],
+  "token_file": "enhance-site.token"
+}

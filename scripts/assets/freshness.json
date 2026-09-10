@@ -1,0 +1,7 @@
+{
+  "retrieved_date": "2026-09-10",
+  "schema_version": "12.25.8",
+  "source": "Enhance official OpenAPI JSON, schema version 12.25.8",
+  "review_interval_days": 30,
+  "update_policy": "Advisory only. Review a separately fetched candidate with schema-diff; never overwrite active schema automatically."
+}

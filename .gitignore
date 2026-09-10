@@ -1,0 +1,22 @@
+# Local credentials and runtime state do not belong in Git.
+.env
+.env.*
+!.env.example
+credentials/
+private/
+profiles/
+*.pem
+*.key
+*.token
+*.log
+*.zip
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+# Obtain the vendor schema directly using scripts/setup_schema.py.
+/scripts/assets/openapi.json
+/scripts/evidence/
+/scripts/assets/*candidate*
+/references/local-access.md

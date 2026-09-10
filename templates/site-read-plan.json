@@ -1,0 +1,7 @@
+[
+  {"operationId":"getWebsite"},
+  {"operationId":"getWebsiteDomainMappings","view":{"count":true}},
+  {"operationId":"getWebsiteMySQLDBs","view":{"count":true}},
+  {"operationId":"getWebsiteBackups","view":{"count":true}},
+  {"operationId":"getWebsitePersistentApps","view":{"count":true}}
+]
