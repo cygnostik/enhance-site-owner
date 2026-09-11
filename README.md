@@ -34,6 +34,10 @@ See [CLI usage](references/cli-usage.md), [site operations](references/site-oper
 
 Your credential's Enhance permissions determine access. A site profile adds a local guard; it does not reduce an administrator token's authority. Use customer-level credentials and have your provider verify the allowed and denied scope at Enhance.
 
+## API credentials
+
+Use the complete `token-id_secret` value, not the secret alone. [Authentication instructions](references/authentication.md) include the private-output composition helper. See [changes in 0.1.1](CHANGELOG.md).
+
 ## Tests
 
 After schema setup:

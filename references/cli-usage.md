@@ -82,6 +82,10 @@ Provide the environment variable through your approved secret manager/session. T
 
 A named-profile file may use `{"profiles":{"site":{...},"owner":{...}},"default_profile":"site"}`. Select with `--config profiles.json --profile owner`. Unknown configuration fields and multiple token sources are rejected.
 
+## Complete bearer credential
+
+Supply `<token-id>_<secret>` in your configured token source. `createAccessToken.unencryptedToken` alone is only the secret component. Use [the composition helper](authentication.md) on a private creation response. A 403 can be malformed authentication rather than an incorrect role.
+
 ## Calls, typed parameters and mutation gates
 
 ```sh

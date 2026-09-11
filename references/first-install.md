@@ -18,6 +18,10 @@ python3 <skill-dir>/scripts/enhance.py refresh-status
 
 If the schema already exists, skip setup. Updates use the separate candidate/review procedure in [maintenance](maintenance.md), not this first-install helper.
 
+## API key format
+
+Use the complete `token-id_secret` value. If starting from an API creation response, use [the private-output helper](authentication.md); do not copy only `unencryptedToken`.
+
 ## Configure your access
 
 1. Obtain your provider-issued API base, actual customer org ID, permitted website ID and credential. Use a customer-level credential, not the hosting administrator's token.

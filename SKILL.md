@@ -1,7 +1,7 @@
 ---
 name: enhance-site-owner
 description: Use when managing sites hosted on Enhance.
-version: 0.1.0
+version: 0.1.1
 author: Chris, Hermes Agent
 license: Proprietary
 platforms: [linux, macos, windows]
@@ -28,6 +28,10 @@ Resolve this skill directory and Python 3.9+ with `terminal`. The runtime uses t
 Use [onboarding and permissions](references/permissions.md) and a template under `templates/` to prepare a private JSON profile. Supply the provider-approved HTTPS API base and your actual customer org/website IDs. Keep credentials outside the skill, repository and served web directories; use the supported environment/file locator rather than command arguments.
 
 Choose **organisation scope** only when the agent may manage all permitted sites/resources of that customer organisation. Choose **site scope** to add a local exact-website guard. Neither setting changes the credential's server-side permissions. Do not give an agent a provider/master/reseller token and rely on a website ID or these instructions to contain it. Selected-site organisation-token binding within a shared org is not established by the documented token schema; obtain a supported, tested grant rather than guessing.
+
+## Authentication format
+
+Use the complete `<token-id>_<secret>` credential. The `unencryptedToken` field alone is not a usable bearer. See [authentication and the composition helper](references/authentication.md) before creating or diagnosing keys. Customer `SuperAdmin` is relative to the customer organisation, not the hosting provider.
 
 ## How to run
 

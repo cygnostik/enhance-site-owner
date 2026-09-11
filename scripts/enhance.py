@@ -837,7 +837,7 @@ def replace_token(text, token):
 
 def status_error(status):
     guidance_by_status={401:'Authentication rejected. Check the configured token source and the operation security requirements.',
-                        403:'Permission denied. Check the Enhance principal roles and server-side org/site grants; do not widen the token automatically.',
+                        403:'Authentication or authorization rejected. For organisation API tokens, first check the complete token-id_secret bearer format (not the secret alone), then principal roles and org/site grants; do not widen the token automatically.',
                         404:'Resource/route not found. Check exact IDs, API base prefix and schema version; permission masking is also possible.',
                         429:'Rate limited. Wait and retry manually according to server policy; no automatic retry is performed.'}
     return CLIError('HTTP '+str(status)+': '+guidance_by_status.get(status,'Request failed. Inspect server-side diagnostics through an approved private channel; response body withheld.'),'http',status)
